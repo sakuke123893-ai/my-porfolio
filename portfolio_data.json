@@ -1,0 +1,131 @@
+{
+  "profile": {
+    "name": "Dharam Jai Vardhan Reddy",
+    "short_name": "Jai Vardhan",
+    "monogram": "DJVR",
+    "role": "Computer Science Engineering Student",
+    "specializations": "Data Analytics | Cyber Security | Full-Stack Engineering",
+    "status": "Open for Internships & Developer Roles / Class of 2028",
+    "bio": "Computer Science Engineering Student (Class of 2028) passionate about Data Analytics, Cyber Security, and Full-Stack Development. I specialize in building resilient web platforms, interactive real-time systems, and intelligent data-driven architectures that drive business impact.",
+    "email": "sakuke123893@gmail.com",
+    "phone": "+91 8328523265",
+    "phone_raw": "8328523265",
+    "whatsapp_url": "https://wa.me/918328523265?text=Hi%20Dharam,%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20connect%20regarding%20an%20opportunity.",
+    "location": "India",
+    "github": "https://github.com/sakuke123893-ai",
+    "linkedin": "https://www.linkedin.com/in/dharam-jai-vardhan-reddy-6944a4328/"
+  },
+  "recruiter_stats": [
+    { "value": "3+", "label": "Full-Stack Projects", "sub": "IoT & AI Systems" },
+    { "value": "2x", "label": "Industry Certifications", "sub": "Infosys & LinkedIn" },
+    { "value": "B.Tech", "label": "Computer Science", "sub": "Class of 2028" },
+    { "value": "100%", "label": "Production Ready", "sub": "Clean Parameterized Code" }
+  ],
+  "skills": {
+    "Languages": ["Python", "C", "Java", "SQL", "JavaScript (ES6+)"],
+    "Databases": ["MySQL", "MongoDB", "SQLite3", "Database Normalization", "Query Tuning"],
+    "Frameworks & Web": ["React", "Flask", "Tailwind CSS", "HTML5 & CSS3", "RESTful APIs"],
+    "Specialized": ["Data Analysis & BI", "AI Integration", "Cyber Security", "IoT & Sensor Systems", "AWS Cloud"]
+  },
+  "projects": [
+    {
+      "id": 1,
+      "title": "Smart Parking System (Academic)",
+      "category": "iot",
+      "badge": "IoT & Real-Time Analytics",
+      "description": "An IoT-based web application featuring real-time slot monitoring, an interactive analytics dashboard, and automated QR code ticket generation to prevent urban parking congestion.",
+      "tags": ["Flask", "React", "IoT/Sensors", "QR System", "Real-Time"],
+      "filter_keys": ["all", "flask", "react", "iot"],
+      "architecture": "Hardware ultrasonic sensors stream occupancy telemetry over HTTP/WebSocket -> Flask REST API validates and updates slot matrix -> Real-time React dashboard renders live map -> Automated dynamic QR token generated for driver entry/exit validation.",
+      "highlights": [
+        "Eliminated urban parking bottlenecks with instant live slot availability tracking",
+        "Automated cryptographic QR ticket generation for seamless check-ins",
+        "Built responsive real-time analytics dashboard displaying peak parking metrics"
+      ],
+      "live_url": "https://jaivardhan.lovable.app/#projects",
+      "github_url": "https://github.com/sakuke123893-ai"
+    },
+    {
+      "id": 2,
+      "title": "Procurement Intelligence System",
+      "category": "ai",
+      "badge": "AI & Supply Automation",
+      "description": "An AI-powered system designed to analyze vendor supply options, streamline purchase approval workflows, and optimize high-throughput data handling processes within commercial software pipelines.",
+      "tags": ["Python", "AI Integration", "Flask", "Data Pipelines", "Analytics"],
+      "filter_keys": ["all", "flask", "ai", "analytics"],
+      "architecture": "Inbound vendor purchase logs ingested via asynchronous pipelines -> Python data models calculate risk, price variance, and delivery velocity -> Machine learning scoring engine ranks optimal suppliers -> Flask dashboard surfaces recommendations with exportable BI audits.",
+      "highlights": [
+        "Automated supplier quote evaluation reducing procurement cycle times by 40%",
+        "Structured multi-vendor data normalization pipelines with SQLite/MySQL",
+        "Interactive KPI monitoring for pricing anomalies and SLA reliability"
+      ],
+      "live_url": "https://jaivardhan.lovable.app/#projects",
+      "github_url": "https://github.com/sakuke123893-ai"
+    },
+    {
+      "id": 3,
+      "title": "AWS Resume Analyzer",
+      "category": "cloud",
+      "badge": "Cloud AI & NLP",
+      "description": "A cloud-native resume intelligence tool that parses candidate CVs, extracts key engineering skills and insights, and scores competencies against job requirements using AWS services.",
+      "tags": ["AWS", "Python", "Cloud NLP", "Resume Parsing", "Scoring"],
+      "filter_keys": ["all", "cloud", "ai", "analytics"],
+      "architecture": "Resume uploads routed to secure storage -> Python parsing engine extracts plain text and tokenizes candidate skill graphs -> AWS text & entity models score keyword relevance against role profiles -> Generates match breakdown report with gap analysis.",
+      "highlights": [
+        "Cloud-native architecture engineered with Python and AWS integrations",
+        "Automated PDF and DOCX tokenization with high entity extraction accuracy",
+        "Detailed match score output categorizing technical proficiencies vs role requirements"
+      ],
+      "live_url": "https://jaivardhan.lovable.app/#projects",
+      "github_url": "https://github.com/sakuke123893-ai"
+    }
+  ],
+  "certifications": [
+    {
+      "title": "Data Analytics Certification",
+      "issuer": "Infosys Springboard",
+      "badge": "Verified Credential",
+      "period": "Infosys Springboard Certification",
+      "description": "Practical specialization covering exploratory data analysis, business intelligence models, SQL querying, and Python metrics visualization.",
+      "link": "https://www.linkedin.com/in/dharam-jai-vardhan-reddy-6944a4328/details/certifications/"
+    },
+    {
+      "title": "Full-Stack Development & Python",
+      "issuer": "LinkedIn Learning",
+      "badge": "Verified Credential",
+      "period": "Online Technical Coursework",
+      "description": "Comprehensive coursework covering full-stack web applications, React component state management, REST API architecture using Python, and backend design.",
+      "link": "https://www.linkedin.com/in/dharam-jai-vardhan-reddy-6944a4328/details/certifications/"
+    },
+    {
+      "title": "B.Tech in Computer Science Engineering",
+      "issuer": "Undergraduate Engineering Degree",
+      "badge": "Class of 2028",
+      "period": "Expected Graduation: 2028",
+      "description": "Specialized coursework in Distributed Systems, Relational Database Management Systems, Cyber Security, Data Structures & Algorithms, and Software Engineering.",
+      "link": "https://www.linkedin.com/in/dharam-jai-vardhan-reddy-6944a4328/"
+    }
+  ],
+  "resume": {
+    "summary": "Forward-thinking Computer Science Engineering student (Class of 2028) with practical expertise in Full-Stack Web Development, Data Analytics, Relational Databases, and Cyber Security. Proven track record building end-to-end applications including IoT sensor platforms, AI procurement workflows, and cloud analysis tools.",
+    "education": {
+      "degree": "Bachelor of Technology in Computer Science & Engineering",
+      "period": "2024 – 2028 (Expected)",
+      "focus": "Data Analytics, Distributed Systems, Database Management Systems, Software Security"
+    },
+    "coursework": [
+      "Data Structures & Algorithms",
+      "Database Management Systems (SQL)",
+      "Object-Oriented Programming (Java/Python)",
+      "Operating Systems & Linux",
+      "Computer Networks & Protocols",
+      "Cyber Security & Cryptography"
+    ],
+    "highlights": [
+      "Built production-ready Flask & React applications featuring real-time data pipelines",
+      "Holds verified Data Analytics Credential from Infosys Springboard",
+      "Certified in Full-Stack Development & Python from LinkedIn Learning",
+      "Implemented parameterized SQL architectures preventing SQL injection vulnerabilities"
+    ]
+  }
+}

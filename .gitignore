@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.so
+
+# Virtual environments
+venv/
+env/
+.env
+.venv/
+
+# SQLite database (contains personal data - don't commit)
+*.db
+*.sqlite3
+
+# Raw animation frame PNGs (compiled into animated-frame.webp which is committed)
+static/images/frame_*.png
+
+# IDE & OS
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+
+# Secrets
+.env.local
+.env.production
