@@ -13,6 +13,9 @@ document.addEventListener('DOMContentLoaded', () => {
   initContactForm();
   initClipboardCopy();
   initSlidePagerControls();
+  initTypewriter();
+  initScrollAnimations();
+  initMobileMenu();
 });
 
 // Cache portfolio data for dynamic modals
@@ -63,7 +66,7 @@ const portfolioData = {
         "Sub-second analysis throughput enabling fast screening for high-volume recruitment."
       ],
       tags: ["AWS", "Python", "Cloud NLP", "Resume Parsing", "Scoring", "Entity Extraction"],
-      live_url: "https://jaivardhan.lovable.app/#projects",
+      live_url: "https://resume-spark-909.lovable.app",
       github_url: "https://github.com/sakuke123893-ai"
     }
   ]
@@ -502,3 +505,89 @@ function initContactForm() {
     if (btnText) btnText.textContent = isLoading ? 'Submitting to Database...' : 'Submit Inquiry / Schedule Interview';
   }
 }
+
+/* ==========================================================================
+   8. Typewriter Effect
+   ========================================================================== */
+function initTypewriter() {
+  const roles = ["Full-Stack Developer", "Data Analytics Engineer", "Cyber Security Enthusiast"];
+  const el = document.getElementById('typewriter-text');
+  if (!el) return;
+  
+  let roleIndex = 0;
+  let charIndex = 0;
+  let isDeleting = false;
+  
+  function type() {
+    const currentRole = roles[roleIndex];
+    if (isDeleting) {
+      el.textContent = currentRole.substring(0, charIndex - 1);
+      charIndex--;
+    } else {
+      el.textContent = currentRole.substring(0, charIndex + 1);
+      charIndex++;
+    }
+    
+    let typeSpeed = isDeleting ? 40 : 80;
+    
+    if (!isDeleting && charIndex === currentRole.length) {
+      typeSpeed = 2500; // Pause at end of word
+      isDeleting = true;
+    } else if (isDeleting && charIndex === 0) {
+      isDeleting = false;
+      roleIndex = (roleIndex + 1) % roles.length;
+      typeSpeed = 500; // Pause before new word
+    }
+    
+    setTimeout(type, typeSpeed);
+  }
+  
+  setTimeout(type, 1000); // Initial delay
+}
+
+/* ==========================================================================
+   9. Scroll Animations (Entrance)
+   ========================================================================== */
+function initScrollAnimations() {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate-in');
+        observer.unobserve(entry.target); // Run once
+      }
+    });
+  }, { threshold: 0.15 });
+  
+  const elements = document.querySelectorAll('.skill-category-card, .project-card, .timeline-item, .impact-card, .quote-block');
+  elements.forEach((el, index) => {
+    el.classList.add('animate-hidden');
+    // Add staggered delay based on horizontal position or index
+    el.style.transitionDelay = `${(index % 4) * 0.1}s`;
+    observer.observe(el);
+  });
+}
+
+/* ==========================================================================
+   10. Mobile Hamburger Menu
+   ========================================================================== */
+function initMobileMenu() {
+  const toggleBtn = document.getElementById('mobile-menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+  const dotNav = document.querySelector('.dot-nav');
+  
+  if (toggleBtn && navLinks) {
+    toggleBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      toggleBtn.classList.toggle('active');
+    });
+    
+    // Close menu when clicking a link
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        toggleBtn.classList.remove('active');
+      });
+    });
+  }
+}
+
